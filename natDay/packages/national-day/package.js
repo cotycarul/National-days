@@ -24,11 +24,27 @@ Package.onUse(function (api) {
         'standard-minifier-css',
         'standard-minifier-js',
         'es5-shim',
-        'ecmascript'
-
+        'ecmascript',
+        'materialize:materialize',
+        'momentjs:moment'
     ];
     api.use(packages);
     api.imply(packages);
+    //client files
+    api.addFiles([
+        'server/startup.js',
+        'server/publications.js'
+    ], 'server');
+    api.addFiles([
+        'client/index.js',
+        'client/index.js'
+    ], 'client');
+    //server files
+
+    //client and server files
+
+    //Database
+    api.export('NationalDB');
 });
 
 
