@@ -1,5 +1,5 @@
 Meteor.startup(function () {
-    var dateCreator = function (data) {
+    var dateCreator = function (date) {
         return moment(date, 'DD/MM/YYYY').toDate();
     };
     if (NationalDaysDB.find().count() === 0) {

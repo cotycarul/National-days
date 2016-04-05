@@ -30,21 +30,25 @@ Package.onUse(function (api) {
     ];
     api.use(packages);
     api.imply(packages);
-    //client files
+    //Database
+    api.export('NationalDB');
+    //server files
     api.addFiles([
         'server/startup.js',
-        'server/publications.js'
+        'server/publications.js',
+        'lib/collections.js'
     ], 'server');
+    //client files
     api.addFiles([
-        'client/index.js',
+        'index.html',
         'client/index.js'
+
     ], 'client');
-    //server files
+
 
     //client and server files
 
-    //Database
-    api.export('NationalDB');
+
 });
 
 

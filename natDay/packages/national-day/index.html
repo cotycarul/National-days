@@ -1,18 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <title>National Days</title>
 </head>
 <body>
-<div class="red lighten-1">Zilele Nationale ale Romaniei</div>
+<div class="nav-wrapper red lighten-1 center-align"><h5>Zilele Nationale ale Romaniei</h5></div>
 {{> NationalDaysBox}}
 </body>
-</html>
+
 
 <template name="NationalDaysBox">
 
-    <div class="container">
+    <div class="container green lighten-4">
         {{#each nationalDay}}
             <div class=""><b>{{date}}:{{name}}</b></div>
         {{/each}}
